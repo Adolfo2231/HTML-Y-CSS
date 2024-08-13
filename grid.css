@@ -1,0 +1,24 @@
+.grid-container{
+    display: grid;
+    /* *Fraccion de la cantidad de columnas */
+        /* grid-template-columns: 1fr 2fr 1fr; */
+
+        grid-template-columns: repeat(2, 1fr);
+    /* !Tamanio de los elementos segun orden 1, 2, 3  en colums*/
+    /* !Medida fijas es en px flecxibles es en % */
+    /* grid-template-columns: 100px 50% 200px; */
+
+    /* !Tamanio de los elementos segun su orden en filas*/
+    /* grid-template-rows: 200px 100px; */
+
+    /* *Separacion de columnas entre los elementos */
+    /* !1)Valor row 2)Valor colum */
+    gap: 20px 10px;
+}
+
+.grid-items{
+    background-color: tomato;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}

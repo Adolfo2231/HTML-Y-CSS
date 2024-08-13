@@ -25,3 +25,6 @@ order:2;
 
 align-self: flex-end;
 align-self: stretch
+
+
+Propiedades para el contenedor como para sus items
