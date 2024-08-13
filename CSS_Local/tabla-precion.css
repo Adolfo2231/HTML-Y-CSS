@@ -1,0 +1,73 @@
+body{
+            font-family: "Playwrite AR", cursive;
+}
+
+h2{
+    font-weight: 300;
+}
+p{
+    font-weight: 300;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.columna{
+    background:#D95F59;
+    color: #522258;
+    border: 1px, solid, #522258 ;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;/*Bordes redondos(mientras mas alto mas redondo)*/
+    box-shadow: 15px -16px 10px rgb(89, 42, 201);
+    width: 23%;
+    box-sizing: border-box;/*Para que sume y los ponga uno al lado del otro*/
+}
+
+.precio{
+    font-size: 30px;
+    color: slateblue;
+}
+
+.btn-precio{
+
+    background: salmon;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.btn-precio:hover{
+    background: rgb(43, 40, 40);
+}
+
+@media (max-width: 1070px){
+
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+}

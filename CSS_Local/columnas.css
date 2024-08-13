@@ -1,0 +1,18 @@
+nav{
+    background: #677D6A;
+    padding: 20px;
+}
+
+.columna{
+
+    background: #021526;
+    color:#E2E2B6 ;
+    padding: 20px;
+    width: 25%;
+    margin: 20px;
+
+}
+
+.padre{
+    display: flex;/*Le da la flexibilidad de los cajones*/
+}

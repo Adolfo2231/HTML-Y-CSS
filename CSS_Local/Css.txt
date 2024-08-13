@@ -1,0 +1,27 @@
+justify-content - para poder mover el contenido a donde desees
+Ej.justify-content: center;
+Ej. justify-content: space-around;
+
+align-items - movera el objeto al centro de la pagina horizontal como verticalmente
+Ej.align-items: flex-center;
+Ej.align-items: stretch;(No puede tener el alto)-ocupa el 100% del alto
+Ej.align-items: baseline; (alinea sin importar los font-size)
+align-content:center(Cuando tienes 2 lineas de elementos)
+align-item: center(Cuando tienes 1 sola linea)
+
+
+flex-grow = dira cuanto espacio almacenaran los contenedores hijos si pones 1 ocupara el 100% del ancho
+
+Ej. flex-grow: 1;
+
+flex-shrink: restringir el tamanio que tengan, ponemos el ancho minimo
+
+flex: 1 1 auto; = a poner 1)flex-grow y 2)flex-shrink juntos 
+
+order: = Para ordenar elementos
+order: 1;
+order:2;
+
+
+align-self: flex-end;
+align-self: stretch

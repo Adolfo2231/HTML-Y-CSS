@@ -1,0 +1,15 @@
+h1{
+    background: #1A3636;
+   /* margin-left: 150px;
+    margin-bottom: 30px;*/
+   /* margin: 100px*/
+   /* arriba/abajo  izq/derecha
+   margin: 200px 100px;*/
+/* arriba izquierda inferior derecha*/
+   margin: 100px 100px 20px 400px;/*Es un margen externo*/
+}
+
+p{
+    background: #D6BD98;
+    padding: 50px;/*Es un margen interior*/
+}

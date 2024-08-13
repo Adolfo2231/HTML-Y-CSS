@@ -1,0 +1,294 @@
+/** Estilos generales */
+* {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    /* Para que las cajas no se desborden unas con otras*/
+}
+
+body{
+    font-family: "Advent Pro", sans-serif;    
+}
+
+a{
+    /**Para borrar subrayado en todas las anclas*/
+    text-decoration: none;
+       
+}
+/* *Contenedor padre */
+.padre {
+    /* los pondra uno al lado del otro */
+    display: flex;
+    flex-flow: column nowrap;
+    /*? Estableciendo la imagen de fondo para el header*/
+        background: url(EmotionEdwards.jpg);
+    
+    
+    
+        background-position: center;
+        /**Para centralizar la imagen */
+    
+        /* *Para contener la imagen dentro del recuadro */
+        background-attachment: contain;
+        background-attachment: fixed;
+    
+        /* *Para que 1 sola imagen cubra todo el heder*/
+        background-size: cover;
+}
+
+.margen-interno{
+    padding: 0 50px;
+}
+
+    /* ?Contenedores hijos */
+    .header {
+       
+
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+
+        .menu {
+
+            /* !Para hacer el menu transparente */
+            background: rgb(0,0,0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;/**Los centraliza verticalmente*/
+            justify-content: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            text-align: center;/*! Para centralizar el texto de cada 1 de los contenedores hijos*/
+        }
+
+            .logo {
+                
+                flex: 1 1 auto;
+                font-size: 30px;
+                
+                
+            }
+
+                .logo a{
+                    color: #fff;
+                }
+                .logo a:hover{/*! Al poner el mouse sobre*/
+                    color: #343434;
+                }
+            
+            .nav {
+                
+                /*! 5 veces mas grande que el resto de elementos*/
+                flex: 5 1 auto;
+                align-content: center;
+                
+            }
+
+                .nav a{
+                    font-size: 11px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+
+                }
+
+                .nav :hover{
+                    color: #343434;
+                }
+
+            .social {   
+                flex: 1 1 auto;
+                display: flex;
+                
+            }
+
+                .social a{
+                    font-size: 18px;
+                    color: #fff;
+                    padding: 0 5px;
+                }
+
+                .social :hover{
+                    color: #343434;
+                }
+
+        .texto-principal {
+            /* background: #41c9e2; */
+            /* !Para que el contenedor se haga mas alto */
+            height: 580px;
+            display: flex;
+
+            /* !Para centralizar el contenedor h1 */
+            align-items: center;
+        }
+
+            h1 {
+                /* background: #f7eedd; */
+                font-family: "Advent Pro", sans-serif;
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;/**Anchura de 300*/
+                text-align: center;
+                line-height: 1.6;/*!Altura  de separacion en cada una de las lineas*/
+            }
+
+    .section {
+        /* background: #f7f7f7; */
+        display: flex;
+    }
+
+        .articulos {
+            /* background: #f7f7f7; */
+            flex: 2 1 auto;/**2 veces mas grande que el otro contenedor*/
+            display: flex;/**Para que se alinien uno al lado del otro*/
+            flex-flow: row wrap;/**Wrap para que al ocupar mas del porciento lo baje automaticamente*/
+        }
+
+            .article {
+                /* background: #1f6e8c; */
+                flex: 1 1 40%;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                flex: 1 1 45%;
+                background: #ececec;
+            }
+
+            .article img{
+                width: 100%;
+            }
+
+            .article a{
+                font-size: 13px;
+                padding: 10px;
+                background: #000;
+                margin: 10px 0;
+
+                /* !Para que no consuma espacio del article a */
+                display: inline-block;
+            }
+
+            .article a:hover{
+                background: #546cc3;
+            }
+            h3{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px 0;
+
+                /* !Para que se desplaze hacia arriba (sobre la imagen)*/
+                margin-top: -80px;
+
+            }
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color: #fff;
+            }
+
+            .navegacion {
+                background: #01b7ff;
+                flex: 1 1 100%;/**Para que cubra el 100% del area del la div*/
+               margin: 10px 10px 0 0px;
+            }
+
+            .navegacion a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+
+     .aside {
+            /* background: #3e3232; */
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 0;
+            
+
+        }
+
+        .aside img{
+            width: 100%;
+        }
+
+        h4{
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+            .publicidad {
+                /* background: #8d5252; */
+            }
+
+
+        .footer {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+            .pie {
+                /* background: #8d5252; */
+               text-align: center;
+             
+            }
+
+            .pie a{
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+@media all and (max-width: 948px){
+
+    .section{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        height: auto;
+        height: auto;/**Para que al bajar los contenedores no se salgan del contenedor menu*/
+    }
+
+    
+
+    h1{
+        font-size: 15px;
+    }
+
+    .texto-principal{
+        height: 450px;
+    }
+
+}
+
+@media all and (max-width: 600px ){
+
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 446px) {
+
+    .off{
+        display: none;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .aside {
+        flex-direction: column;
+    }
+}

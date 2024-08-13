@@ -1,0 +1,12 @@
+button{
+    background: #CDF5FD;
+    color: #00A9FF;
+}
+
+button:hover{/*Al estar sobre el boton*/
+    background:#2A363B;
+}
+
+button:active{/*Al hacer click sobre el boton*/
+    background: #CF4647;
+}

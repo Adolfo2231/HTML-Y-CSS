@@ -1,0 +1,65 @@
+body {
+    background: #7D0A0A;
+
+}
+
+h1 {
+    background: #EAD196;
+    color: #7D0A0A;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    border-radius: 20px;
+    box-shadow: 10px -10px 5px #758694;
+}
+
+img {
+    width: 500px;
+    height: auto;
+   margin: 0 auto;
+}
+
+iframe {
+
+    width: 400px;
+    height: auto;
+    margin: 10px;
+   
+
+}
+.hijo {
+    display: flex;
+    margin:30px 30px;
+}
+
+.titulos-secundarios {
+    background: #EAD196;
+    color: #7D0A0A;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 75px;
+    border-radius: 20px;
+    box-shadow: 10px -10px 5px #758694;
+   /* margin: 50px 600px; //**borde exterior*/
+
+}
+
+.parrafo {
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    text-shadow: 10px -10px 30px rgb(10, 10, 10);
+}
+
+@media (max-width: 1000px) {
+
+.hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    margin: auto;  
+    }
+}

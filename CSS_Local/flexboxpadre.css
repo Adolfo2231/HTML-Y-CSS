@@ -1,0 +1,53 @@
+
+
+.contenedor{
+     width: 100%;
+     height: 500px; 
+    background: #FF5C29;
+    margin: 50px auto;
+    display: flex;/**Es lo que permite que los cuadros se pongan uno al lado del otro sin respetar el espacio sino que los apretara en la misma linea*/
+
+    /**flex-direction: row;//**Es por defecto*/
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+
+    /**Hara que respete el alto y ancho ya establecido se correran hacia abajo */
+    flex-wrap: wrap;
+
+    /**Movera todos los elementos al centro HORIZONTALMENTE (IZQ/DER)*/
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+
+    /* *Movera todos los elemento al centro VERTICALMENTE (ARRIBA/ABAJO)*/
+    /* align-items: center; */
+
+    /* *Permite que los elemento hijos ocupen el 100% del alto*/
+    /* !Solo funciona si le quitas el height a los elementos */
+    /* align-items: stretch; */
+
+    /* *Alinea todos los elementos sin importar que la letra sea mas grande */
+    /* align-items: baseline; */
+
+    /* *Solo funciona si hay mas de 2 lineas de elementos en el contenedor padre */
+    align-content:center ;
+    /* align-content: flex-end; */
+    /* align-content: flex-start; Por default */
+    align-content: space-between;
+
+}
+
+.hijo{
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+.otro{
+
+    font-size: 60px;
+}

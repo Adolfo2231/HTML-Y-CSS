@@ -1,0 +1,10 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+}
+
+img {
+
+backdrop-filter: blur(10px);
+}

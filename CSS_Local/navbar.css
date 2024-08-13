@@ -1,0 +1,53 @@
+.nav-enlace {
+    background: #E2E2B6;
+    color: #03346E;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    /*Borra la linea de debajo*/
+
+}
+
+/*Hara que cambie el color de los menus al pasarle por encima con el mouse*/
+.nav-enlace:hover {
+    background: #6EACDA;
+}
+
+nav {
+    background: #03346E;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav-button{
+    background: seagreen;
+    color: aliceblue;
+    padding: 10px 0px;
+    display: none;
+
+
+    /*tamanio, estado, color*/
+    border: 2px solid #fff;
+}
+/*Media queries (0-600px)*/
+@media(max-width: 600px) {
+    nav {
+        background: saddlebrown;
+        flex-direction: column;
+    }
+
+    .nav-enlace {
+
+        margin: 10px 0px;
+    }
+        .nav-button {
+            display: inline-block;
+        }
+
+    .desaparece{
+        display: none;
+    }
+
+}

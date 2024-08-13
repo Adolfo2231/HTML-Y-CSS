@@ -1,0 +1,20 @@
+  h1 {
+      color: blueviolet;
+      font-size: 50px;
+  }
+
+  /* id unico*/
+  #unico{
+        color: blue;
+        font-size: 50px;
+  }
+
+  /* Esto es una clase se sabe por que comienza con .azul*/
+  .azul{
+    color: blue;
+  }
+
+  .fondo{
+
+    background-color: #69111c;
+  }

@@ -1,0 +1,80 @@
+.contenedor {
+    width: 100%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    display: flex;
+    /**Es lo que permite que los cuadros se pongan uno al lado del otro sin respetar el espacio sino que los apretara en la misma linea*/
+
+    /**flex-direction: row;//**Es por defecto*/
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+
+    /**Hara que respete el alto y ancho ya establecido se correran hacia abajo */
+    flex-wrap: wrap;
+
+    /**Movera todos los elementos al centro HORIZONTALMENTE (IZQ/DER)*/
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+
+    /* *Movera todos los elemento al centro VERTICALMENTE (ARRIBA/ABAJO)*/
+    /* align-items: center; */
+
+    /* *Permite que los elemento hijos ocupen el 100% del alto*/
+    /* !Solo funciona si le quitas el height a los elementos */
+    /* align-items: stretch; */
+
+    /* *Alinea todos los elementos sin importar que la letra sea mas grande */
+    /* align-items: baseline; */
+
+    /* *Solo funciona si hay mas de 2 lineas de elementos en el contenedor padre */
+    /* align-content: center; */
+    /* align-content: flex-end; */
+    /* align-content: flex-start; Por default */
+    /* align-content: space-between; */
+
+    text-align: center;
+
+}
+
+.hijo {
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+
+    /* *Abarque el 100% del contenedor*/
+    /* !Hay que cancelar el ancho del contenedor padre */
+    /* flex-grow: 1; */
+
+    /* *Le restringimos un ancho minimo (width) */
+    /* flex-shrink: 0; */
+
+    /* *1)flex-grow 2)flex-shrink 3)sera automatico */
+    /* *Hara que todos los elementos crezcan y se achiquen equitativamente */
+    flex: 1 1 auto;
+
+    /* *Funciona para ordenar los elementos hijos, el nombre indicara la prioridad */
+    order:2 ;
+
+}
+
+.otro {
+
+    /* *Hara que se alinie al final, medio o al comienzo */
+    /* !Debes quitar el align content/ align item del contenedor padre */
+    align-self: flex-end;
+    /* align-self: flex-start; */
+    /* align-self: stretch; Abarca el 100% del ancho */
+    height: auto;
+
+}
+
+.order{
+
+    /* *Funciona para ordenar los elementos hijos */
+    order: 1;
+}
