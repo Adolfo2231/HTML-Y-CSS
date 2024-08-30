@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <!-- *Al presionar submit los enviara al link que esta en action -->
+    <form id="practiceForm" action="https://jsonplaceholder.typicode.com/todos," method="POST">
+
+        <label id="firstNameLabel"" for=" firstName"> Enter name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter firstName">
+        <br>
+
+        <label id="lastNameLabel" for="lastName"> Enter lastname</label>
+        <input type="text" id="lastName" name="lastname" placeholder="lastname">
+        <br>
+
+        <label id="emailLabel" for="email"> Enter email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <br>
+
+        <label id="ageLabel" for="age"> Enter your age</label>
+        <input type="number" id="age" min="0" max="100">
+        <br>
+
+        <input type="radio" id="male" name="gender">
+        <label id="maleLabel" for="male"> Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label id="femaleLabel" for="female"> Female</label>
+        <br>
+
+        <label id="satisfactionLabel" for="satisfaction"> Satisfaction</label>
+        <input type="range" id="satisfaction" min="0" max="100">
+        <hr>
+
+        <input type="submit" id="submit">
+
+</body>
+
+</html>
