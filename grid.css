@@ -3,17 +3,31 @@
     /* *Fraccion de la cantidad de columnas */
         /* grid-template-columns: 1fr 2fr 1fr; */
 
-        grid-template-columns: repeat(2, 1fr);
+    /* !Primer numero indicara la cantidad de columnas en que se dividiran los elementos */
+    /* *Las elementos se agrandaran dependiendo de su contenido */
+        grid-template-columns: repeat(3, 1fr);
+
     /* !Tamanio de los elementos segun orden 1, 2, 3  en colums*/
     /* !Medida fijas es en px flecxibles es en % */
-    /* grid-template-columns: 100px 50% 200px; */
+    /* grid-template-columns: 45%; */
 
     /* !Tamanio de los elementos segun su orden en filas*/
-    /* grid-template-rows: 200px 100px; */
+    /* grid-template-rows: 100px 200px; */
+    grid-template-rows: repeat(6,1fr);
 
     /* *Separacion de columnas entre los elementos */
     /* !1)Valor row 2)Valor colum */
     gap: 20px 10px;
+
+    /* *Definimos que todas las filas sean de 100px */
+    /* !NO respetara el contenido dentro de los elementos */
+    /* ? Funcion minmax( minimo t.filas/maximo t.auto) hara que respete el contenido y sera flexible*/
+    /* grid-auto-rows: minmax(100px,100px); */
+
+    /* *Para rellenar espacios vacios con otro elemento */
+    /* grid-auto-flow: row dense;
+    grid-auto-flow: column dense; */
+    
 }
 
 .grid-items{
@@ -22,3 +36,27 @@
     border-radius: 5px;
     padding: 10px;
 }
+
+/* *Para crear un scroll en el item hijo #3 */
+/* ?grid-column y grid-row para posicionar los elementos de starts/end */
+/* ?Layout */
+
+.grid-items:nth-child(3){
+    overflow-y: scroll;
+    background: blueviolet;
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+
+    grid-column: 1/2;
+
+    /* grid-row-start: 1;
+    /* grid-row-end: 2; */
+
+    /* grid-row: 2/3; */
+
+    /* *start/span 4 = toma el espacio total de 4 elementos */
+    /* grid-column: 1/ span 4; */
+
+
+} 
+
