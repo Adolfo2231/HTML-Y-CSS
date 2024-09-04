@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: aquamarine;
+}
+.menubar{
+    text-align: center;
+    margin-bottom: 100px;
+    background-color: ;
+}
+
+.formularios{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+   
+   
+}
+
+input{
+    margin: 5px;
+}
