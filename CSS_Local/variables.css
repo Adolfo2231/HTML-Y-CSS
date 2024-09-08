@@ -1,13 +1,15 @@
 :root{
     --title-color: peru;
+    --grande: 50px;
 }
 
 h1{
-    color: var(--title-color);
+     color: var(--title-color,blue);/**,blue color secundario de no encontrar la variable */
 }
 
 h2{
     color: var(--title-color);
+    font-size: var(--grande);
 }
 
 p{

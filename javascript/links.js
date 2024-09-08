@@ -1,1 +1,2 @@
+
 alert("Desde archivo externo")
