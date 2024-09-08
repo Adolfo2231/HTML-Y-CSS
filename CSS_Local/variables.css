@@ -1,0 +1,15 @@
+:root{
+    --title-color: peru;
+}
+
+h1{
+    color: var(--title-color);
+}
+
+h2{
+    color: var(--title-color);
+}
+
+p{
+    color: var(--title-color);
+}
