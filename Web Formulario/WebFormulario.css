@@ -12,13 +12,30 @@
     background-color: ;
 }
 
+.medio{
+    display: flex;
+    padding: 10px;
+    
+}
+
+
+
 .formularios{
     display: flex;
     flex-direction: column;
     width: 300px;
-   
-   
+    margin: 0px 5px;
+    width: 500px;
+ 
 }
+
+aside{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+
 
 input{
     margin: 5px;
