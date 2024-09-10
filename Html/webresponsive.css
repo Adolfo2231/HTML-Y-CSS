@@ -22,18 +22,17 @@ a{
     flex-flow: column nowrap;
     /*? Estableciendo la imagen de fondo para el header*/
         background: url(EmotionEdwards.jpg);
-    
-    
-    
-        background-position: center;
+
+        background-position:top;
         /**Para centralizar la imagen */
     
         /* *Para contener la imagen dentro del recuadro */
-        background-attachment: contain;
-        background-attachment: fixed;
+        background-attachment:contain;
+        background-attachment:fixed;
     
         /* *Para que 1 sola imagen cubra todo el heder*/
-        background-size: cover;
+        background-size:contain;
+        
 }
 
 .margen-interno{
@@ -148,7 +147,7 @@ a{
 
             .article {
                 /* background: #1f6e8c; */
-                flex: 1 1 40%;
+                flex: 2 1 40%;
                 color: #444;
                 font-size: 13px;
                 letter-spacing: 1px;
@@ -207,7 +206,9 @@ a{
      .aside {
             /* background: #3e3232; */
             flex: 1 1 auto;
+            height: 100%;
             margin: 10px 5px 10px 0;
+            margin-bottom: 100px;
             
 
         }
@@ -238,7 +239,6 @@ a{
             .pie {
                 /* background: #8d5252; */
                text-align: center;
-             
             }
 
             .pie a{

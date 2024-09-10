@@ -1,2 +1,1 @@
-
-alert("Desde archivo externo")
+alert("Hola Bienvenido")

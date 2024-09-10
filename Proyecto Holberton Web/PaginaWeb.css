@@ -1,0 +1,49 @@
+:root{
+    --margenes: 5px 10px;
+    --space-around: space-around
+}
+
+.contenedor-padre{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal-title{
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.title-ejercicios{
+    display: flex;
+   justify-content: center;
+}
+
+.ejercicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--margenes);
+    gap: 30px;
+   
+
+}
+
+.articulos:nth-child(1){
+    height: 100px;
+    width: 1200px;
+   background-image: url("slamdung.jpg");
+   background-size: cover;
+}
+
+
+
+
+
