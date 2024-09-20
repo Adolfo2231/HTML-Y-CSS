@@ -1,0 +1,19 @@
+.fancyButton {
+    width: 100px;
+    height: 30px;
+    padding: 8px 16px;
+    margin: 10px;
+    color: white;
+    background: linear-gradient(45deg, rgb(6, 6, 209), rgb(46, 46, 219));
+    ;
+    border-radius: 50px;
+    border-style: dashed;
+    box-shadow: 10px 4px 4px red;
+    transition: 1s;
+}
+
+.fancyButton:hover {
+    opacity: .8;
+    box-shadow: 10px 10px 10px yellow;
+    background: black;
+}

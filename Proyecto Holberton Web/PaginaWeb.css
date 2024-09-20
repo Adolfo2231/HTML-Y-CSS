@@ -24,6 +24,7 @@ header{
 .title-ejercicios{
     display: flex;
    justify-content: center;
+   background-color: red;
 }
 
 .ejercicio{
@@ -32,15 +33,20 @@ header{
     align-items: center;
     margin: var(--margenes);
     gap: 30px;
-   
-
+    
 }
 
 .articulos:nth-child(1){
-    height: 100px;
-    width: 1200px;
-   background-image: url("slamdung.jpg");
-   background-size: cover;
+ 
+    background-image: url("slamdung.jpg") ;
+    background-size: cover;
+    flex: 1 1 auto;
+   
+}
+
+.articulos:nth-child(2){
+    background-color: white;
+    flex: 1 1 auto;
 }
 
 

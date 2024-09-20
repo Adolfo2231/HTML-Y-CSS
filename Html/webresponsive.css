@@ -27,7 +27,7 @@ a{
         /**Para centralizar la imagen */
     
         /* *Para contener la imagen dentro del recuadro */
-        background-attachment:contain;
+        
         background-attachment:fixed;
     
         /* *Para que 1 sola imagen cubra todo el heder*/

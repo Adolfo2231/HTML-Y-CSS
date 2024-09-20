@@ -1,0 +1,37 @@
+:root{
+
+    --color-principal: #81DAE3;
+    --color-secundario:#825B32;
+    --color-fondo: #6CBEC7;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Arial';
+    background-color: var(--color-fondo);
+}
+
+
+.sidebar{
+    width: 250px;
+    height: 100%;
+    background-color: var(--color-secundario);
+    position: fixed;
+    box-sizing: border-box;
+    top: 0px;
+    right: 0px;
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+p{
+    color: var(--color-secundario);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+p:hover{
+    opacity: 2;
+}

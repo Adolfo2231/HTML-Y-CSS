@@ -1,0 +1,88 @@
+.container {
+    display: grid;
+
+}
+
+.menu-bar {
+    display: grid;
+    grid-template-areas:
+        "a a b c d e";
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    grid-area: a;
+}
+
+.article {
+    text-decoration: none;
+}
+
+.article:nth-child(2) {
+    grid-area: b;
+}
+
+.article:nth-child(3) {
+    grid-area: c;
+
+}
+
+.article:nth-child(4) {
+    grid-area: d;
+}
+
+.article:nth-child(5) {
+    grid-area: e;
+}
+
+.principal {
+    display: grid;
+    background-color: aqua;
+
+    /** Para que se acomoden las cajas dependiendo del espacio disponeble */
+    /* 1)auto-fit para que todo se acomode al espacio disponible */
+    /* 2) minmax(tamanio de las columnas,) */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.box {
+    background-color: tomato;
+    border: 3px solid #000;
+    border-radius: 5px;
+    margin: 10px;
+    height: 200px;
+}
+
+
+
+.box:nth-child(1) {
+
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: contain;
+    /*?Para que la imagen cubra todo el fondo*/
+
+}
+
+.box:nth-child(2) {
+ 
+}
+
+.box:nth-child(3) {
+    align-items: center;
+    background-image: url(https:www.youtube.com/watch?v=qII5BueXWD4);
+   
+}
+
+.box:nth-child(4) {
+   
+}
+
+.box:nth-child(5) {
+
+}
+
+.box:nth-child(6) {
+ 
+}
